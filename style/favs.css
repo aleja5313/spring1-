@@ -1,0 +1,14 @@
+body{
+    background-color: #FEC7D7;
+
+}
+h4{
+    padding: 100px 40px;
+    font-weight: bold;
+}
+@media (min-width: 375px){
+    h4{
+
+        padding: 30px 40px;
+    }
+}

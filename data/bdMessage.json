@@ -1,0 +1,17 @@
+{
+    "chat": [
+    {
+        "id": 1,
+        "sP": "¡Hola! Me encantaría adoptar una mascota",
+        "sO": "¡Hola! ¿Comentame en que mascota estas interesada en adoptar?",
+        "p1": "Gracias, quiero adoptar a Chester!!!",
+        "r1": "Me alegra mucho es un perro encantador, podemos acordar una cita para que conozcas a Chester",
+        "p2": "Claro que si podría este sabado!",
+        "r2": "Perfecto te espero el día sabado en la direccion 566 West 1350 South Bountiful UT 84010 USA",
+        "dP": "Genial me queda cerca del trabajo, nos vemos pronto!!!",
+        "dO": "Te estaremos esperando con ansias...",
+        "usuario": "Enrique Gómez",
+        "imgusuario": "https://i.ibb.co/0jk5rR8/Ellipse10.png"
+   
+    } 
+]} 

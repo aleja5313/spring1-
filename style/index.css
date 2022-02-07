@@ -1,0 +1,19 @@
+    body {
+        background-color: #FEC7D7;
+    
+
+}
+
+#icono1 {
+    display: none;
+    position: absolute;
+    left: 48%;
+    top: 45%;
+}
+
+#icono2 {
+    display: none;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
