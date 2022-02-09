@@ -1,35 +1,25 @@
-const urlfavs = 'http://localhost:3002/favoritos/';
+const showFav = document.querySelector('.grid-mascotas');
 
+const getLocalStorage = () => {
 
-const muestraFav = document.querySelector('.grid-mascotas');
-const listador3 = document.querySelector('body')
+  const det3 = JSON.parse(localStorage.getItem("Fav"));
+  console.log(det3);
+  det3.forEach(element => {
+    const { likeName, likeImg, likeRace, likeId, likeCategory } = element;
 
+      showFav.innerHTML += `
+      <div class="card bg-transparent text-white"  id='${likeId}' >
+      <img src=${likeImg} id='${likeId}' class="card-img" alt="...">
+  <div class="card-img-overlay ${likeCategory} id=${likeId}">
+      <h5 ">${likeName}</h5>
+      <p class="card-text">${likeRace}</p>
+  </div>
+  </div>
+      `
 
-const getFavs = async() => {
-
-    const resp = await fetch(urlfavs);
-    const data = await resp.json();
-
-    data.forEach(favorito => {
-        const {imagen,nombre,raza,id} = favorito;
-
-        muestraFav.innerHTML += `
-        <div class="col mascotas">
-        <a href="#" class="enlace-detalle-mascota">
-        <div class="card bg-dark text-white gradiente">                
-        <img src="${imagen}" class="card-img" alt="...">
-        <div class="card-img-overlay"  id=${id}>
-        <h5 class="card-title body2Bold">${nombre}</h5>
-        <p class="card-text body2Regular">${raza}</p>
-        </div>
-        </div>
-        </a>
-        </div>
-        `
-        
-    });
+  });
 }
 
-document.addEventListener('DOMContentLoaded', getFavs)
+document.addEventListener('DOMContentLoaded', getLocalStorage);
 
 
